@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Jura } from "next/font/google";
+import { Winky_Rough } from "next/font/google";
 import "./globals.css";
+
+const jura = Jura({
+  variable: "--font-jura",
+  subsets: ["latin"],
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +16,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const winkyRough = Winky_Rough({
+  variable: "--font-winky-rough",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -25,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${jura.variable} ${geistSans.variable} ${geistMono.variable} ${winkyRough.variable} antialiased leading-relaxed text-white font-sans`}
       >
         {children}
       </body>
