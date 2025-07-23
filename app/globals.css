@@ -28,6 +28,13 @@ html {
   opacity: 0.5;
 }
 
+/* Grid layout with fixed left side */
+.grid.grid-cols-2 > div:last-child {
+  overflow-y: auto;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

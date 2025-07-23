@@ -6,7 +6,7 @@ import { Experience } from "@/app/components";
 export default function Home() {
   return (
     <div className="bg-[rgb(4,9,21)]">
-    <div className="grid grid-cols-2 min-h-screen overflow-y-auto max-w-7xl mx-auto">
+    <div className="grid grid-cols-2 min-h-screen max-w-7xl mx-auto">
       <header className="sticky top-0 h-screen flex py-24">
         <div className="flex flex-col justify-between h-full">
           <div>
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </header>
       <div className="py-24">
-        <section id="about" className="mb-16">
+        <section id="about" className="mb-16 scroll-mt-24">
           <div className="space-y-6 text-slate-300 leading-relaxed">
             <p>
               I&apos;m a Senior Software Engineer with over 8 years of experience building high-impact products across fintech, health tech, e-scheduling, and fashion commerce. As a full-stack developer, I specialize in JavaScript, React, Next.js, and Kotlin, with a growing interest in backend architecture, AI, and immersive technologies like AR/VR.
