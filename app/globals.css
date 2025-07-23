@@ -29,7 +29,7 @@ html {
 }
 
 /* Grid layout with fixed left side */
-.grid.grid-cols-2 > div:last-child {
+.grid.grid-cols-1.lg\:grid-cols-2 > div:last-child {
   overflow-y: auto;
   height: 100vh;
   scroll-behavior: smooth;
