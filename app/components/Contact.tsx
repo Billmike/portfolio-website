@@ -104,6 +104,7 @@ export function Contact() {
         setSubmitStatus('error');
       }
     } catch (error) {
+      console.error('Error sending email:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);

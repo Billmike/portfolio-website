@@ -12,7 +12,7 @@ export function IntroHeader() {
           </FadeInText>
           <FadeInText delay={200} duration={1000}>
             <h2 className="text-lg sm:text-xl mt-3 text-slate-200">
-              Senior Software Engineer
+              Full Stack Software Engineer
             </h2>
           </FadeInText>
           <p className="mt-4 leading-normal text-white">
@@ -32,17 +32,17 @@ export function IntroHeader() {
         </div>
         <ul className="ml-1 flex items-center mt-8 lg:mt-0" aria-label="Social links">
           <li className="mr-5 shrink-0 text-xs">
-            <a href="https://github.com/kayode-dev" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)" title="GitHub">
+            <a href="https://github.com/Billmike" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens in new tab)" title="GitHub">
               <GitFork className="w-6 h-6" style={{ color: '#36e0db' }} />
             </a>
           </li>
           <li className="mr-5 shrink-0 text-xs">
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/michael-ayelegun/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in new tab)" title="LinkedIn">
               <Linkedin className="w-6 h-6" style={{ color: '#36e0db' }} />
             </a>
           </li>
           <li className="mr-5 shrink-0 text-xs">
-            <a href="https://twitter.com/your-handle" target="_blank" rel="noopener noreferrer" aria-label="Twitter (opens in new tab)" title="Twitter">
+            <a href="https://x.com/stackless_dev?s=21" target="_blank" rel="noopener noreferrer" aria-label="Twitter (opens in new tab)" title="Twitter">
               <Twitter className="w-6 h-6" style={{ color: '#36e0db' }} />
             </a>
           </li>
