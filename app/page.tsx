@@ -5,19 +5,33 @@ export default function Home() {
     <div className="bg-[rgb(4,9,21)]">
       <MobileNavigation />
       
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen max-w-7xl mx-auto px-6 lg:px-0">
-                <IntroHeader />
-      {/* Main Content Section */}
-      <div className="py-8 lg:py-24">
-        <AboutSection />
-          <section id="experience" className="mb-16">
+      {/* Desktop Layout - Two Column */}
+      <div className="hidden lg:grid lg:grid-cols-2 min-h-screen max-w-7xl mx-auto lg:px-0">
+        <IntroHeader />
+        <div className="py-24">
+          <AboutSection />
+          <section id="experience" className="mb-16 scroll-mt-20">
             <Experience />
           </section>
-          <section id="contact" className="mb-16">
+          <section id="contact" className="mb-16 scroll-mt-20">
             <Contact />
           </section>
+        </div>
       </div>
-    </div>
+
+      {/* Mobile Layout - Single Column Scrollable */}
+      <div className="lg:hidden max-w-7xl mx-auto px-6">
+        <IntroHeader />
+        <div id="mobile-about" className="scroll-mt-64">
+          <AboutSection />
+        </div>
+        <section id="mobile-experience" className="mb-16 scroll-mt-20">
+          <Experience />
+        </section>
+        <section id="mobile-contact" className="mb-16 scroll-mt-20">
+          <Contact />
+        </section>
+      </div>
     </div>
   );
 }
