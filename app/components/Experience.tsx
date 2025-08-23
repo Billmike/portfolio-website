@@ -9,7 +9,7 @@ const experiences = [
     href: "https://zalando.com",
     logo: "/zalando-logo.svg",
     description: "Design, build, and maintain critical AI-driven partner infrastructure supporting Zalando’s Supply Expert function. Collaborate closely with cross-functional teams—including developers, designers, and product managers—to deliver on the product roadmap efficiently and on schedule.",
-    technologies: ["JavaScript", "React", "Next.js", "RAG", "LLM", "AI", "Kotlin", "Spring Boot", "PostgreSQL", "Redis", "Kafka", "AWS", "Docker", "Kubernetes"],
+    technologies: ["JavaScript", "React", "TypeScript", "Next.js", "RAG", "LLM", "AI", "Kotlin", "Spring Boot", "PostgreSQL", "Redis", "Kafka", "AWS", "Docker", "Kubernetes"],
   },
   {
     startDate: "Feb 2020",
@@ -19,7 +19,7 @@ const experiences = [
     href: "https://risevest.com",
     logo: "/risevest-logo.svg",
     description: "Led the end-to-end full-stack rebuild of the Rise Mobile Platform, resulting in a 120% increase in Assets Under Management within six months. Designed secure, JWT-based REST APIs to safeguard financial transactions, and implemented automated testing (Detox, Jest) alongside streamlined CI/CD pipelines to ensure rapid, reliable mobile releases.",
-    technologies: ["JavaScript", "React", "React Native", "Node.js", "PostgreSQL", "Zustand", "Jest", "Detox", "CI/CD"],
+    technologies: ["JavaScript", "React", "TypeScript", "React Native", "Node.js", "PostgreSQL", "Zustand", "Jest", "Detox", "CI/CD"],
   },
   {
     startDate: "Sep 2018",
@@ -28,7 +28,7 @@ const experiences = [
     company: "Shiftboard (via Andela)",
     href: "https://shiftboard.com",
     description: "Owned and delivered high-impact features for workforce management platforms, including data-driven shift scheduling tools with a focus on rich UI/UX and accessibility. Collaborated on the design and implementation of scalable GraphQL and REST APIs to support performant, maintainable systems.",
-    technologies: ["JavaScript", "React", "React Native", "Node.js", "PostgreSQL", "GraphQL", "Jest"],
+    technologies: ["JavaScript", "React", "TypeScript", "React Native", "Node.js", "PostgreSQL", "GraphQL", "Jest"],
   },
   {
     startDate: "Dec 2017",
@@ -37,7 +37,7 @@ const experiences = [
     company: "Andela",
     href: "https://andela.com",
     description: "Developed and maintained full-stack applications featuring secure user authentication, real-time capabilities, and optimized database performance. Actively mentored engineers on modern React and Node.js best practices while contributing to both open-source projects and internal knowledge-sharing initiatives.",
-    technologies: ["JavaScript", "React", "React Native", "Node.js", "PostgreSQL"],
+    technologies: ["JavaScript", "React", "TypeScript", "React Native", "Node.js", "PostgreSQL"],
   },
 ];
 
