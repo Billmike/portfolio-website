@@ -8,8 +8,8 @@ const experiences = [
     company: "Zalando",
     href: "https://zalando.com",
     logo: "/zalando-logo.svg",
-    description: "Design, build, and maintain critical partner infrastructure supporting Zalando’s Supply Expert function. Collaborate closely with cross-functional teams—including developers, designers, and product managers—to deliver on the product roadmap efficiently and on schedule.",
-    technologies: ["JavaScript", "React", "Next.js", "Kotlin", "Spring Boot", "PostgreSQL", "Redis", "Kafka", "AWS", "Docker", "Kubernetes"],
+    description: "Design, build, and maintain critical AI-driven partner infrastructure supporting Zalando’s Supply Expert function. Collaborate closely with cross-functional teams—including developers, designers, and product managers—to deliver on the product roadmap efficiently and on schedule.",
+    technologies: ["JavaScript", "React", "Next.js", "RAG", "LLM", "AI", "Kotlin", "Spring Boot", "PostgreSQL", "Redis", "Kafka", "AWS", "Docker", "Kubernetes"],
   },
   {
     startDate: "Feb 2020",
