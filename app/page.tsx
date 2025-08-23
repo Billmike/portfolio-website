@@ -1,4 +1,4 @@
-import { Experience, Contact, MobileNavigation, IntroHeader, AboutSection } from "@/app/components";
+import { Experience, Contact, MobileNavigation, IntroHeader, AboutSection, Projects } from "@/app/components";
 
 export default function Home() {
   return (
@@ -12,6 +12,9 @@ export default function Home() {
           <AboutSection />
           <section id="experience" className="mb-16 scroll-mt-20">
             <Experience />
+          </section>
+          <section id="projects" className="mb-16 scroll-mt-20">
+            <Projects />
           </section>
           <section id="contact" className="mb-16 scroll-mt-20">
             <Contact />
@@ -27,6 +30,9 @@ export default function Home() {
         </div>
         <section id="mobile-experience" className="mb-16 scroll-mt-20">
           <Experience />
+        </section>
+        <section id="mobile-projects" className="mb-16 scroll-mt-20">
+          <Projects />
         </section>
         <section id="mobile-contact" className="mb-16 scroll-mt-20">
           <Contact />

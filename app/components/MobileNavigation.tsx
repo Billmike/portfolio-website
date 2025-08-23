@@ -28,6 +28,14 @@ export function MobileNavigation() {
               </li>
               <li>
                 <a 
+                  href="#mobile-projects"
+                  className="text-sm font-medium text-slate-300 hover:text-slate-200 transition-colors"
+                >
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a 
                   href="#mobile-contact"
                   className="text-sm font-medium text-slate-300 hover:text-slate-200 transition-colors"
                 >
