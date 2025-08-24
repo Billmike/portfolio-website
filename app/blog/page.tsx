@@ -14,7 +14,7 @@ export default function BlogPage() {
 
   return (
     <div className="bg-[rgb(4,9,21)] min-h-screen">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 pb-24 pt-10">
         {/* Logo and navigation */}
         <div className="lg:block hidden">
           <Link href="/" className="inline-block mt-16 mb-8">

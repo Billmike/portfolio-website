@@ -44,10 +44,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <div className="bg-[rgb(4,9,21)] min-h-screen">
-      <div className="max-w-4xl mx-auto px-6 py-24">
+      <div className="max-w-4xl mx-auto px-6 pb-24 pt-10">
         {/* Logo and navigation */}
-        <div>
-          <Link href="/" className="inline-block mb-8">
+        <div className="lg:block hidden">
+          <Link href="/" className="inline-block mt-16 mb-8">
             <Image 
               src="/logo-dark.svg" 
               alt="Stackless Dev Logo" 
