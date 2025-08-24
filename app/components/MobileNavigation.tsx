@@ -61,40 +61,40 @@ export function MobileNavigation() {
             <nav>
               <ul className="space-y-4">
                 <li>
-                  <a 
-                    href="#mobile-about"
+                  <Link 
+                    href="/#mobile-about"
                     className="block text-lg font-medium text-slate-300 hover:text-slate-200 transition-colors py-2"
                     onClick={closeMenu}
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a 
-                    href="#mobile-experience"
+                  <Link 
+                    href="/#mobile-experience"
                     className="block text-lg font-medium text-slate-300 hover:text-slate-200 transition-colors py-2"
                     onClick={closeMenu}
                   >
                     Experience
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a 
-                    href="#mobile-projects"
+                  <Link 
+                    href="/#mobile-projects"
                     className="block text-lg font-medium text-slate-300 hover:text-slate-200 transition-colors py-2"
                     onClick={closeMenu}
                   >
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a 
-                    href="#mobile-contact"
+                  <Link 
+                    href="/#mobile-contact"
                     className="block text-lg font-medium text-slate-300 hover:text-slate-200 transition-colors py-2"
                     onClick={closeMenu}
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <Link 

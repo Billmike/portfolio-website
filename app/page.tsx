@@ -1,9 +1,8 @@
-import { Experience, Contact, MobileNavigation, IntroHeader, AboutSection, Projects } from "@/app/components";
+import { Experience, Contact, IntroHeader, AboutSection, Projects } from "@/app/components";
 
 export default function Home() {
   return (
     <div className="bg-[rgb(4,9,21)]">
-      <MobileNavigation />
       
       {/* Desktop Layout - Two Column */}
       <div className="hidden lg:grid lg:grid-cols-2 min-h-screen max-w-7xl mx-auto lg:px-0">

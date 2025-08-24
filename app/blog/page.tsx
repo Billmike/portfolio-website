@@ -15,8 +15,20 @@ export default function BlogPage() {
   return (
     <div className="bg-[rgb(4,9,21)] min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
+        {/* Logo and navigation */}
+        <div className="lg:block hidden">
+          <Link href="/" className="inline-block mt-16 mb-8">
+            <Image 
+              src="/logo-dark.svg" 
+              alt="Stackless Dev Logo" 
+              width={40} 
+              height={40}
+              className="hover:opacity-80 transition-opacity"
+            />
+          </Link>
+        </div>
         
-        <div className="mb-16">
+        <div className="mb-16 pt-8 lg:pt-0">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Headspace
           </h1>
