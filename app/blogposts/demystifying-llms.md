@@ -26,7 +26,7 @@ During its training, the model adjusts its parameters to minimize prediction err
 
 To understand how LLMs process text, we need to first discuss their underlying architecture. Take the following sentence as an example:
 
-*The cat chased the dog, but it ran...*
+> **The cat chased the dog, but it ran...**
 
 To process the above text and figure out what the next possible word should be, the LLM first breaks this into special parts known as **tokens**. A token can be a word, subword or individual characters in a sentence. This process of breaking a sentence into tokens is known as **Tokenization**.
 
@@ -36,5 +36,16 @@ Next, the embeddings pass through multiple **Transformer** layers. The Transform
 
 The final layer of the processing outputs a probability distribution over the next possible token. Based on the weights of the distribution, it selects one of the outputs that it thinks is most likely to complete the sentence in a way that makes sense. With the above example, the outputs could be *"outside, away, inside, downstairs"*. The model randomly picks one of these outputs and presents the final sentence:
 
-*The cat chased the dog, but it ran outside* 
+> **The cat chased the dog, but it ran outside**
 
+### Putting it all together
+
+So far, we've seen what LLMs are, how they learn and how they process text. At their core they are sophisticated pattern recognition machines trained to predict the next word in a sequence, powered by neural networks with billions of parameters.
+
+What makes them extraordinary is the scale. With enough data and compute, these models capture subtle patterns of language that allow them to write, reason, and even create in ways that feel natural to us. They don’t truly “understand” the way humans do, but their ability to recognize and reproduce patterns has made them one of the most transformative technologies of the 21st century.
+
+### What does the future hold?
+
+Looking ahead, LLMs will continue to evolve. We are beginning to see smaller, specialized models for various industries like Medicine and Law. With this progress will also come important conversations about ethics, bias, and how to use these systems responsibly.
+
+The big picture? LLMs aren’t magic. In our quest to move humanity forward with technological advancements, LLMs can help us reach the next level of productivity that expands what we can build, how we can communicate, and even how we imagine the future of human–AI collaboration.
