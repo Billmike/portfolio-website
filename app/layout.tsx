@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Jura } from "next/font/google";
 import { Winky_Rough } from "next/font/google";
 import "./globals.css";
+import { MobileNavigation } from "./components";
 
 const jura = Jura({
   variable: "--font-jura",
@@ -56,6 +57,7 @@ export default function RootLayout({
       <body
         className={`${jura.variable} ${geistSans.variable} ${geistMono.variable} ${winkyRough.variable} antialiased leading-relaxed text-white font-sans`}
       >
+        <MobileNavigation />
         {children}
       </body>
     </html>

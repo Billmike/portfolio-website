@@ -4,3 +4,5 @@ export { IntroHeader } from "./IntroHeader";
 export { AboutSection } from "./AboutSection";
 export { Projects } from "./Projects";
 export { MobileNavigation } from "./MobileNavigation";
+export { BlogCard } from "./BlogCard";
+export { MarkdownRenderer } from "./MarkdownRenderer";
