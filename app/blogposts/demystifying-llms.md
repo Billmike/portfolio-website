@@ -10,7 +10,9 @@ At first glance, the magic behind LLMs can feel like something out of a  sci-fi 
 
 ### What is a Large Language Model?
 
-At its core, an LLM is a computer program trained to **predict the next word in a sequence**. That’s it. No really, that's it. 
+At its core, an LLM is a computer program trained to **predict the next word in a sequence**. That’s it. No really, that's it.
+
+![GPT Text Generation Process](/gpt-text-generation.png)
 
 Imagine your phone's auto-complete feature. You start typing a sentence like *"I am going to the..."* and it suggests *"gym"* or *"supermarket"*, both of which makes sense in the context of the sentence. Now imagine this auto-complete has read billions of books, articles and human conversations, with the abiity to generate full essays, stories, or code snippets. That's an LLM.
 
