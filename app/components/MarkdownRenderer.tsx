@@ -25,7 +25,7 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           <h3 className="text-xl font-semibold text-white mb-4 mt-8">{children}</h3>
         ),
         p: ({ children }) => (
-          <p className="text-gray-300 mb-4 leading-relaxed">{children}</p>
+          <p className="text-white mb-4 leading-relaxed text-lg">{children}</p>
         ),
         strong: ({ children }) => (
           <strong className="font-semibold text-white">{children}</strong>
@@ -49,22 +49,22 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           );
         },
         blockquote: ({ children }) => (
-          <blockquote className="border-l-4 border-blue-500 pl-4 italic text-gray-300 mb-4">
+          <blockquote className="border-l-4 border-blue-500 pl-4 italic text-white mb-4">
             {children}
           </blockquote>
         ),
         ul: ({ children }) => (
-          <ul className="list-disc list-inside text-gray-300 mb-4 space-y-2">
+          <ul className="list-disc list-outside text-white mb-4 space-y-2">
             {children}
           </ul>
         ),
         ol: ({ children }) => (
-          <ol className="list-decimal list-inside text-gray-300 mb-4 space-y-2">
+          <ol className="list-disc list-outside text-white mb-4 space-y-2">
             {children}
           </ol>
         ),
         li: ({ children }) => (
-          <li className="text-gray-300">{children}</li>
+          <li className="text-white">{children}</li>
         ),
       }}
     >

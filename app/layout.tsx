@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jura.variable} ${geistSans.variable} ${geistMono.variable} ${winkyRough.variable} antialiased leading-relaxed text-white font-sans`}
+        className={`${jura.variable} ${geistSans.variable} antialiased leading-relaxed text-white font-sans`}
       >
         <MobileNavigation />
         {children}

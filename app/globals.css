@@ -40,3 +40,10 @@ body {
   color: var(--foreground);
   font-family: var(--font-jura), Arial, Helvetica, sans-serif;
 }
+
+table, 
+table tr,
+table td,
+table th {
+  color: var(--background);
+}
