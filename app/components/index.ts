@@ -7,3 +7,4 @@ export { MobileNavigation } from "./MobileNavigation";
 export { BlogCard } from "./BlogCard";
 export { MarkdownRenderer } from "./MarkdownRenderer";
 export { Footer } from "./Footer";
+export { CookieConsent } from "./CookieConsent";

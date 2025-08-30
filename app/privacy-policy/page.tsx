@@ -61,6 +61,7 @@ export default function PrivacyPolicy() {
               <li>Pages visited</li>
               <li>Time and date of visits</li>
               <li>Referring website addresses</li>
+              <li>Google Analytics data (with your consent)</li>
             </ul>
           </section>
 
@@ -91,6 +92,34 @@ export default function PrivacyPolicy() {
               <li>Improve website functionality and user experience</li>
               <li>Analyze website traffic and usage patterns</li>
               <li>Maintain website security</li>
+              <li>Understand how visitors interact with the site (Google Analytics)</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-white font-jura">
+              Google Analytics and Tracking
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              This website uses Google Analytics to understand how visitors interact with the site. Google Analytics collects information such as:
+            </p>
+            <ul className="list-disc list-inside text-gray-300 leading-relaxed mb-4 ml-4">
+              <li>Pages visited and time spent on each page</li>
+              <li>User interactions (clicks, scrolls, form submissions)</li>
+              <li>Traffic sources and referral information</li>
+              <li>Device and browser information</li>
+              <li>Geographic location (country/region level)</li>
+            </ul>
+
+            <h3 className="text-xl font-medium mb-3 text-white font-jura">
+              Google Analytics Data Collection
+            </h3>
+            <ul className="list-disc list-inside text-gray-300 leading-relaxed mb-4 ml-4">
+              <li>Google Analytics uses cookies to track user behavior</li>
+              <li>Data is processed by Google in accordance with their privacy policy</li>
+              <li>IP addresses are anonymized to protect your privacy</li>
+              <li>You can opt out of Google Analytics tracking through your browser settings</li>
+              <li>We respect your cookie preferences and only collect analytics data with your consent</li>
             </ul>
           </section>
 
