@@ -2,11 +2,11 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { trackEvent } from '@/app/lib/analytics';
+import { sendGAEvent } from '@next/third-parties/google';
 
 export function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false);
-  const [consentGiven, setConsentGiven] = useState(false);
+  const [, setConsentGiven] = useState(false);
 
   useEffect(() => {
     // Check if user has already given consent
@@ -24,11 +24,12 @@ export function CookieConsent() {
     setConsentGiven(true);
     
     // Track consent decision
-    trackEvent('cookie_consent', {
-      consent_type: 'accepted_all',
-      event_category: 'consent',
-      event_label: 'cookie_banner'
-    });
+    sendGAEvent({
+      event: 'cookie_consent',
+      value: {
+        consent_type: 'accepted_all',
+      }
+    })
     
     // Enable Google Analytics
     if (typeof window !== 'undefined' && window.gtag) {
@@ -44,10 +45,11 @@ export function CookieConsent() {
     setConsentGiven(false);
     
     // Track consent decision
-    trackEvent('cookie_consent', {
-      consent_type: 'necessary_only',
-      event_category: 'consent',
-      event_label: 'cookie_banner'
+    sendGAEvent({
+      event: 'cookie_consent',
+      value: {
+        consent_type: 'necessary_only',
+      }
     });
     
     // Disable Google Analytics

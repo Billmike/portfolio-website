@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getBlogPostBySlug, getBlogPosts } from "@/app/lib/blog";
 import { MarkdownRenderer } from "@/app/components";
-import { BlogPostTracker } from "./BlogPostTracker";
+import { BlogPostTracker } from "@/app/components/BlogPostTracker";
 
 interface BlogPostPageProps {
   params: Promise<{
