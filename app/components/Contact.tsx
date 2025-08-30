@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { z } from 'zod';
+import { trackContactSubmission, trackContactError } from "@/app/lib/analytics";
 
 // Validation schema
 const contactSchema = z.object({
@@ -76,6 +77,7 @@ export function Contact() {
     if (!result.success) {
       const fieldErrors = result.error.flatten().fieldErrors;
       setErrors(fieldErrors as Partial<ContactFormData>);
+      trackContactError('validation_error');
       return;
     }
     
@@ -100,12 +102,15 @@ export function Contact() {
           email: false,
           message: false
         });
+        trackContactSubmission('contact_form');
       } else {
         setSubmitStatus('error');
+        trackContactError('server_error');
       }
     } catch (error) {
       console.error('Error sending email:', error);
       setSubmitStatus('error');
+      trackContactError('network_error');
     } finally {
       setIsSubmitting(false);
     }

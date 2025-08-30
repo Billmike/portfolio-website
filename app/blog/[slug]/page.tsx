@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { getBlogPostBySlug, getBlogPosts } from "@/app/lib/blog";
 import { MarkdownRenderer } from "@/app/components";
+import { BlogPostTracker } from "./BlogPostTracker";
 
 interface BlogPostPageProps {
   params: Promise<{
@@ -44,6 +45,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <div className="bg-[rgb(4,9,21)] min-h-screen">
+      <BlogPostTracker postTitle={post.title} postSlug={post.slug} />
       <div className="max-w-4xl mx-auto px-6 pb-24 pt-10">
         {/* Logo and navigation */}
         <div className="lg:block hidden">

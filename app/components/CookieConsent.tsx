@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { trackEvent } from '@/app/lib/analytics';
 
 export function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false);
@@ -22,6 +23,13 @@ export function CookieConsent() {
     setShowBanner(false);
     setConsentGiven(true);
     
+    // Track consent decision
+    trackEvent('cookie_consent', {
+      consent_type: 'accepted_all',
+      event_category: 'consent',
+      event_label: 'cookie_banner'
+    });
+    
     // Enable Google Analytics
     if (typeof window !== 'undefined' && window.gtag) {
       window.gtag('consent', 'update', {
@@ -34,6 +42,13 @@ export function CookieConsent() {
     localStorage.setItem('cookie-consent', 'necessary');
     setShowBanner(false);
     setConsentGiven(false);
+    
+    // Track consent decision
+    trackEvent('cookie_consent', {
+      consent_type: 'necessary_only',
+      event_category: 'consent',
+      event_label: 'cookie_banner'
+    });
     
     // Disable Google Analytics
     if (typeof window !== 'undefined' && window.gtag) {

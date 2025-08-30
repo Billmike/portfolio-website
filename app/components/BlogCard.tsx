@@ -1,13 +1,20 @@
+'use client';
+
 import Link from 'next/link';
 import { BlogPost } from '@/app/lib/blog';
+import { trackBlogView } from '@/app/lib/analytics';
 
 interface BlogCardProps {
   post: BlogPost;
 }
 
 export function BlogCard({ post }: BlogCardProps) {
+  const handleBlogClick = () => {
+    trackBlogView(post.title, post.slug);
+  };
+
   return (
-    <Link href={`/blog/${post.slug}`} className="block">
+    <Link href={`/blog/${post.slug}`} className="block" onClick={handleBlogClick}>
       <div className="bg-gray-800/50 rounded-lg p-6 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 hover:bg-gray-800/70 group">
         <div className="mb-4">
           <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
