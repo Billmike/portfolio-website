@@ -32,7 +32,7 @@ export default function BlogPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Headspace
           </h1>
-          <p className="text-lg text-gray-300 max-w-2xl">
+          <p className="text-lg text-gray-300 max-w-2xl font-[Lora]">
             Thoughts, insights, and discoveries from my journey in software development and technology.
           </p>
         </div>

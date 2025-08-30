@@ -20,7 +20,7 @@ export function BlogCard({ post }: BlogCardProps) {
           </div>
         </div>
         
-        <p className="text-gray-300 leading-relaxed">
+        <p className="text-gray-300 leading-relaxed font-[Lora]">
           {post.description}
         </p>
         

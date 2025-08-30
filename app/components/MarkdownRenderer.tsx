@@ -22,10 +22,10 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           <h1 className="text-3xl font-bold text-white mb-6">{children}</h1>
         ),
         h3: ({ children }) => (
-          <h3 className="text-xl font-semibold text-white mb-4 mt-8">{children}</h3>
+          <h3 className="text-xl font-semibold text-white mb-4 mt-8 font-[Lora]">{children}</h3>
         ),
         p: ({ children }) => (
-          <p className="text-white mb-4 leading-relaxed text-lg">{children}</p>
+          <p className="text-white mb-4 leading-8 font-[Lora]">{children}</p>
         ),
         strong: ({ children }) => (
           <strong className="font-semibold text-white">{children}</strong>
@@ -54,17 +54,17 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
           </blockquote>
         ),
         ul: ({ children }) => (
-          <ul className="list-disc list-outside text-white mb-4 space-y-2">
+          <ul className="list-disc list-inside text-white mb-4 space-y-2 font-[Lora]">
             {children}
           </ul>
         ),
         ol: ({ children }) => (
-          <ol className="list-disc list-outside text-white mb-4 space-y-2">
+          <ol className="list-disc list-inside text-white mb-4 space-y-2 font-[Lora]">
             {children}
           </ol>
         ),
         li: ({ children }) => (
-          <li className="text-white">{children}</li>
+          <li className="text-white font-[Lora]">{children}</li>
         ),
       }}
     >

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Jura } from "next/font/google";
-import { Winky_Rough } from "next/font/google";
+import { Jura, Lora } from "next/font/google";
 import "./globals.css";
 import { MobileNavigation } from "./components";
 
@@ -9,20 +8,9 @@ const jura = Jura({
   subsets: ["latin"],
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-const winkyRough = Winky_Rough({
-  variable: "--font-winky-rough",
-  subsets: ["latin"],
-  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${jura.variable} ${geistSans.variable} antialiased leading-relaxed text-white font-sans`}
+        className={`${jura.variable} ${lora.variable} antialiased leading-relaxed text-white font-sans`}
       >
         <MobileNavigation />
         {children}
