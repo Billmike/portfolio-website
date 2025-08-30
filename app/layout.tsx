@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Jura, Lora } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import "./globals.css";
 import { MobileNavigation, Footer } from "./components";
 
@@ -48,6 +49,7 @@ export default function RootLayout({
         <MobileNavigation />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-3DK82NMM35" />
       </body>
     </html>
   );
