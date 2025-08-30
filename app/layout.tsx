@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Jura, Lora } from "next/font/google";
 import "./globals.css";
-import { MobileNavigation } from "./components";
+import { MobileNavigation, Footer } from "./components";
 
 const jura = Jura({
   variable: "--font-jura",
@@ -47,6 +47,7 @@ export default function RootLayout({
       >
         <MobileNavigation />
         {children}
+        <Footer />
       </body>
     </html>
   );

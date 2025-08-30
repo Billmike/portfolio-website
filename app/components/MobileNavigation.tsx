@@ -105,6 +105,15 @@ export function MobileNavigation() {
                     Blog
                   </Link>
                 </li>
+                <li>
+                  <Link 
+                    href="/privacy-policy"
+                    className="block text-lg font-medium text-slate-300 hover:text-slate-200 transition-colors py-2"
+                    onClick={closeMenu}
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </nav>
           </div>
