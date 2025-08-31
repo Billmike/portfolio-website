@@ -4,7 +4,7 @@ Author: Kayode Ayelegun
 
 Updated: 28 Aug, 2025
 
-Our world is teeming with information in various forms; articles, videos, conversations, code. For serveral years, we've relied on keyword search to find what we need. Most search systems rely on the user to enter exactly what they are looking for. For example, if you search for "a feline friend playing with a toy" in a search system, a basic search engine might miss documents talking about "cat chasing a ball". It understands words, but not necessarily meaning.
+Our world is teeming with information in various forms; articles, videos, conversations, code. For several years, we've relied on keyword search to find what we need. Most search systems rely on the user to enter exactly what they are looking for. For example, if you search for "a feline friend playing with a toy" in a search system, a basic search engine might miss documents talking about "cat chasing a ball". It understands words, but not necessarily meaning.
 
 This is the problem that two powerful technologies, Vector Databases and Retrieval-Augmented Generation (RAG), are built to solve. Together, they are teaching AI not just to talk, but to understand, reference, and explain.
 
