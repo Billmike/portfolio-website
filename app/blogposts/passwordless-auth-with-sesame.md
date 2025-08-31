@@ -37,7 +37,7 @@ Now you’re set up with the app. When you visit a website that supports Sesame,
 1. You click “Register” and pick a username.
 2. The website sends your request to the Sesame server.
 3. The server generates a special download link for the app, which the site shows to you.
-4. You click the link, and—assuming you already have the app installed, it opens and asks you to do something unusual.
+4. You click the link, and assuming you already have the app installed, it opens and asks you to do something unusual.
 
 Instead of creating a password, you’re asked to upload an image from your phone. After that, you confirm your identity with a biometric check (like FaceID or Fingerprint).
 
@@ -50,7 +50,7 @@ Let’s say you come back to that same website later. Here’s what login looks 
 1. You enter your username.
 2. The site displays a six-digit code.
 3. Almost instantly, you get a push notification from the Sesame app.
-4. You tap it, the app asks for the six-digit code, and once you enter it—you’re in.
+4. You tap it, the app asks for the six-digit code, and once you enter it you’re in.
 
 At first glance, this just looks like a standard **push notification login**. But the magic is in what happens behind the scenes.
 
