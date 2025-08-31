@@ -66,6 +66,16 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
         li: ({ children }) => (
           <li className="text-white font-[Lora]">{children}</li>
         ),
+        a: ({ href, children }) => (
+          <a 
+            href={href} 
+            className="text-blue-400 hover:text-blue-300 underline transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {children}
+          </a>
+        ),
       }}
     >
       {cleanContent}
